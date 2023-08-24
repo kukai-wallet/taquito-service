@@ -1,0 +1,25 @@
+{
+  "name": "taquito-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "dependencies": {
+    "@taquito/taquito": "^17.2.0",
+    "@taquito/tzip12": "^17.2.0",
+    "@taquito/tzip16": "^17.2.0",
+    "axios": "^1.4.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.4",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}
